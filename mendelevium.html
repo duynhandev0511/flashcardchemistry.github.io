@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mendelevium</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="https://cdn.glitch.global/dee1901e-9dff-40ca-8ac9-ab8283a91434/Logo%20App%20.png?v=1694181238812" />
+<script src="https://kit.fontawesome.com/c135a019b6.js" crossorigin="anonymous"></script>
+  <style>
+    .mySlides{
+  display: none;
+}
+.w3-content .w3-display-container {
+  justify-content: center;
+  display: flex; 
+}
+    
+    h2{
+      color: #1089ff;
+      font-family: Arial;
+    }
+button{
+  text-align: center;
+  margin-left: 0;
+  border: none;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color:#e2eeff;
+  color: #0060f0;
+}
+.content-container{
+  top: 50%;
+  margin: 0;
+}
+
+audio{
+  margin-top: 10px;
+}
+  </style>
+  </head>
+<body>
+<center>
+<h2 class="w3-center">Mendelevium</h2>
+<div class="content-container">
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="https://cdn.glitch.global/dee1901e-9dff-40ca-8ac9-ab8283a91434/Md1.png?v=1702048512609" >
+  <img class="mySlides" src="https://cdn.glitch.global/dee1901e-9dff-40ca-8ac9-ab8283a91434/Md2.png?v=1702048514809" >
+  <img class="mySlides" src="https://cdn.glitch.global/dee1901e-9dff-40ca-8ac9-ab8283a91434/Md3.png?v=1702048517313" >
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)"><i class="fa-solid fa-angles-right fa-flip-horizontal" style="font-size: 25px;"></i></button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)"><i class="fa-solid fa-angles-right" style="font-size: 25px;"></i></button>
+</div>
+  <audio src="https://www.oxfordlearnersdictionaries.com/media/english/uk_pron/m/men/mende/mendelevium__gb_1.mp3" controls></audio>
+  </div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</center>
+</body>
+</html>

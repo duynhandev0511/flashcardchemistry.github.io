@@ -1,0 +1,37 @@
+.quiz {
+    background: #1c0522;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    
+}
+
+.findmatch {
+    background: #1c0522;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    
+}
+
+#imgfind img {
+    width: 70%;
+    border-radius: 10px;
+    margin-left: 80px;
+}
+
+#imgquiz img {
+    width: 70%;
+    border-radius: 10px;
+
+}
+
+#text-quiz {
+    width: 100%;
+    text-align: justify;
+    color: white
+}

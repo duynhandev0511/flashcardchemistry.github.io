@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+  
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://cdn.glitch.global/dee1901e-9dff-40ca-8ac9-ab8283a91434/Logo%20App%20.png?v=1694181238812" />
+    <script src="https://kit.fontawesome.com/c135a019b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/minerals.css"/>
+    <link rel="stylesheet" href="./style/contact.css"/>
+    <title>Flashcard Hóa Học</title>
+  </head>
+  <body>
+    <header>
+ <div id="wrapper">
+   <div id="header" id="bg">
+       <nav id="container">
+              <img width="5%" src="https://cdn.glitch.global/dee1901e-9dff-40ca-8ac9-ab8283a91434/Logo%20App%20.png?v=1694181238812">         
+        <!-- <input type="checkbox" id="toggler">
+         <label for="toggler"><i class="fa-solid fa-bars" style="color: #000000; font-size: 30px;"></i></label>-->
+         <div class="menu">
+       <ul id="main-menu">
+          <li class="nav-item"><a href="home.html">Trang chủ</a></li>
+          <li class="nav-item"><a href="ai.html"> Nhận diện AI</a></li>
+          <li class="nav-item"><a href="minerals.html"> Khám phá quặng</a></li>
+          <li class="nav-item"><a href="periodictable.html">Bảng tuần hoàn</a></li>
+          <li class="nav-item"><a href="e-learning.html">E-Learning</a></li>
+          <li class="nav-item"><a href="game.html">Trò chơi</a></li>
+          <li class="nav-item"><a class="active" href="contact.html">Liên hệ</a></li>
+       </ul>
+         </div>
+     </nav>
+   </div>
+      </div>
+    </header>
+    <div class="contact">
+        <div class="column column-1">
+            <div id="color">
+                <h1>C O N T A C T</h1>
+            <p>Chúng tôi luôn sẵn lòng lắng nghe - gửi thông tin liên hệ của bạn và bắt đầu một cuộc đối thoại mở. Đội ngũ chuyên gia của chúng tôi mong chờ cơ hội hợp tác và hỗ trợ bạn trên mọi bước đường</p>
+            </div>
+            <h2>fivecgroup@gmail.com</h2>
+            <div class="listsocial">
+              <ul class="social-icons">
+                <li><a href="#" ><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#" ><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#" ><i class="fab fa-instagram"></i></a></li>
+            </ul>
+            </div>
+        </div>
+        <div class="column column-2">
+                <h3 style="color: white; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">HÃY LÀM VIỆC CÙNG NHAU</h3>
+                <form id="contact-form">
+                  <input type="text" id="name" placeholder="Họ và tên" required>
+                  <input type="email" id="email" placeholder="Email" required>
+                  <textarea id="message" placeholder="Tin nhắn của bạn" required></textarea>
+                  <button type="submit">Gửi</button>
+                </form>
+        </div>
+    </div>
+    <script>
+        window.onscroll = function() {changeNavColorOnScroll()};
+
+function changeNavColorOnScroll() {
+  var container = document.getElementById('container');
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    container.style.backgroundColor = "#9a9a9a"; // Màu nền mới khi cuộn
+  } else {
+    container.style.backgroundColor = "transparent"; // Màu nền ban đầu
+  }
+}
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    let name = document.getElementById('name').value;
+    let email = document.getElementById('email').value;
+    let message = document.getElementById('message').value;
+
+    if (name === '' || email === '' || message === '') {
+        alert('Vui lòng điền đầy đủ thông tin');
+        event.preventDefault(); // Prevent form submission
+    }
+});
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  var name = document.getElementById('name').value;
+  var email = document.getElementById('email').value;
+  var message = document.getElementById('message').value;
+
+  localStorage.setItem('name' ,name);
+  localStorage.setItem('email' ,email);
+  localStorage.setItem('message' ,message);
+
+  alert ('Thông tin đã được gửi');
+});
+    </script>
+    </body>
+    </html>

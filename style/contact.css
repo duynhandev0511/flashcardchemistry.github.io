@@ -1,0 +1,115 @@
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+    gap: 16px; /* Space between columns */
+    padding: 16px;
+    background-color: #1f1f1f;
+    height: 100vh;
+}
+
+.column {
+    background-color: #1f1f1f; /* Light grey background */
+    padding: 16px;
+}
+
+.column h1 {
+    color: white;
+    font-size: 70px;
+    margin-top: 100px;
+}
+
+.column h2 {
+    color: white;
+    margin-top: 40px;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.column p {
+    color: white;
+}
+
+#color {
+    margin-top: 100px;
+    background: #044ef4;
+    align-items: center;
+    padding: 0px 30px 30px ;
+}
+
+.column-2 {
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Two rows of equal height in the second column */
+    gap: 16px; /* Space between rows */
+    margin-top: 100px;
+}
+
+.row {
+    background-color: #1f1f1f; /* Slightly darker grey background */
+    padding: 16px;
+}
+
+/* form */
+
+#contact-form {
+    margin-top: -200px;
+    width: 100%;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    outline: none; 
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-bottom: 2px solid #007bff; /* Thay đổi màu viền khi focus */
+    background-color: transparent;
+}
+
+#contact-form button {
+    width: 40%;
+    float: right;
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 0px;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin-top: 70px;
+    text-align: left;
+}
+
+.social-icons li {
+    margin: 10px 0;
+}
+
+.social-icons li a {
+    color: white; 
+    font-size: 24px; 
+    display: inline-block;
+}
+
+.social-icons li a:hover {
+    color: #007bff; 
+}

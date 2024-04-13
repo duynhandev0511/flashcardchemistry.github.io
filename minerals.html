@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+  
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://cdn.glitch.global/dee1901e-9dff-40ca-8ac9-ab8283a91434/Logo%20App%20.png?v=1694181238812" />
+    <script src="https://kit.fontawesome.com/c135a019b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/minerals.css"/>
+    <link rel="stylesheet" href="./style/swiper-bundle.min.css"/>
+    <title>Flashcard Hóa Học</title>
+  </head>
+  <body>
+    <header>
+ <div id="wrapper">
+   <div id="header" id="bg">
+       <nav id="container">
+              <img width="5%" src="https://cdn.glitch.global/dee1901e-9dff-40ca-8ac9-ab8283a91434/Logo%20App%20.png?v=1694181238812">         
+        <!-- <input type="checkbox" id="toggler">
+         <label for="toggler"><i class="fa-solid fa-bars" style="color: #000000; font-size: 30px;"></i></label>-->
+         <div class="menu">
+       <ul id="main-menu">
+          <li class="nav-item"><a href="home.html">Trang chủ</a></li>
+          <li class="nav-item"><a href="ai.html"> Nhận diện AI</a></li>
+          <li class="nav-item"><a class="active" href="minerals.html"> Khám phá quặng</a></li>
+          <li class="nav-item"><a href="periodictable.html">Bảng tuần hoàn</a></li>
+          <li class="nav-item"><a href="e-learning.html">E-Learning</a></li>
+          <li class="nav-item"><a href="game.html">Trò chơi</a></li>
+          <li class="nav-item"><a href="contact.html">Liên hệ</a></li>
+       </ul>
+         </div>
+     </nav>
+   </div>
+      </div>
+    </header>
+    <section>
+      <h2 id="text">Minerals</h2>
+      <a href="#sec" id="btn">Explore</a>
+      <img src="./background-remover/mineralsbg.jpg" id="bgheader">
+    </section>
+    <div class="sec" id="sec">
+      <div id="imgCuprite">
+        <img id="Cuprite" src="./background-remover/Cuprite.png">
+      </div>
+      <div id="Cuprite">
+        <h2>Quặng Cuprite</h2>
+      <p>Quặng Cuprite là một loại khoáng chứa Copper và Copper Oxide. Nó thường có màu đỏ đậm đặc trưng và được tìm thấy ở nhiều địa điểm trên thế giới, bao gồm cả các khu vực giàu đồng như Chile, Nam Phi và Arizona, Mỹ. Cuprite là một nguồn quan trọng của đồng và thường được khai thác để trích xuất kim loại này. Ngoài ra, Cuprite cũng được sử dụng làm đá quý hoặc vật liệu trang trí nhờ vào màu sắc đặc biệt của nó.</p>
+      <a href="#" id="btncp">Khám phá ngay</a><a href="#thi" id="next"><i class="fa-regular fa-circle-down fa-fade" style="color: #ffffff;"></i></a>
+      </div>
+    </div>
+
+    <div class="thi" id="thi">
+      <div id="Pyrite">
+        <h2>Quặng Pyrite</h2>
+        <p>Quặng Pyrite là một loại khoáng chứa lớp sắt sulfte, thường có màu vàng hoặc đồng nâu. Nó được sử dụng như một nguồn quan trọng của sắt và cũng có ứng dụng trong sản xuất sulfuric acid. Pyrite cũng có thể gây ra hiện tượng oxy hóa trong môi trường đất và nước.</p>
+        <a href="#fo" id="nextl"><i class="fa-regular fa-circle-down fa-fade" style="color: #ffffff;"></i></a><a href="#" id="btncpl">Khám phá ngay</a>
+      </div>
+      <div id="imgPyrite">
+        <img id="Pyrite" src="./background-remover/Pyrite.png">
+      </div>
+    </div>
+
+    <div class="fo" id="fo">
+      <div id="imgFluorite">
+        <img id="Fluorite" src="./background-remover/Fluorite.png">
+      </div>
+      <div id="Fluorite">
+        <h2>Quặng Fluorite</h2>
+      <p>Quặng Fluorite là một loại khoáng chất phổ biến, thường có màu từ trong suốt đến xanh, tím hoặc đen. Nó được sử dụng rộng rãi trong công nghiệp, bao gồm sản xuất thép, luyện kim và làm thủy tinh. Fluorite cũng được sử dụng trong sản xuất Hydrofluoric acid, nhựa và thuốc trừ sâu. Ngoài ra, vì màu sắc và bóng đẹp, nó cũng được sử dụng làm đá quý trong trang sức và trang trí.</p>
+      <a href="#" id="btncp">Khám phá ngay</a><a href="#" id="next"><i class="fa-regular fa-circle-down fa-fade" style="color: #ffffff;"></i></a>
+      </div>
+    </div>
+
+    <script>
+      let text = document.getElementById('text');
+      let btn = document.getElementById('btn');
+      let bgheader = document.getElementById('bgheader');
+      window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        text.style.marginTop = value * 0.7 + 'px';
+        header.style.top = value * 0.5 + 'px';
+      })
+
+      window.addEventListener("scroll", function() {
+  var sec = document.querySelector(".sec");
+  var scrollPosition = window.pageYOffset;
+
+  sec.style.backgroundPositionY = scrollPosition * 0.7 + "px"; // Điều chỉnh tốc độ scroll parallax bằng cách thay đổi hệ số
+});
+
+window.onscroll = function() {changeNavColorOnScroll()};
+
+function changeNavColorOnScroll() {
+  var container = document.getElementById('container');
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    container.style.backgroundColor = "#9a9a9a"; // Màu nền mới khi cuộn
+  } else {
+    container.style.backgroundColor = "transparent"; // Màu nền ban đầu
+  }
+}
+
+
+
+    </script>
+  </body>
+  <footer class="footer">
+    <div class="footer-column footer-column-left">
+    </div>
+    <div class="footer-column footer-column-center">
+      <div class="social-icons">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+      </div>
+      <div class="rights-reserved">All rights reserved</div>
+    </div>
+    <div class="footer-column column-right">
+      <!-- Column phải -->
+    </div>
+  </footer>
+  
+  
+</html>

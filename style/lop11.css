@@ -1,0 +1,27 @@
+.container-1 li, 
+.container-1 a{
+  list-style: none;
+  text-decoration: none;
+  font-family: Mulish, sans-serif;
+  color: black;
+  margin-top: 12px;
+}
+
+.sub-muc-luc li a:hover{
+  color: #0820b2;
+}
+
+.container-1 h1{
+  text-align: center;
+  font-family: Mulish, sans-serif;
+  color: #1089ff;
+  margin-top: 50px;
+}
+
+/* Mobile */
+@media (max-width: 46.25em){
+  .container-1 li, 
+.container-1 a{
+  margin-top: 12px;
+}
+}

@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+  
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://cdn.glitch.global/dee1901e-9dff-40ca-8ac9-ab8283a91434/Logo%20App%20.png?v=1694181238812" />
+    <script src="https://kit.fontawesome.com/c135a019b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style/minerals.css"/>
+    <link rel="stylesheet" href="./style/periodictable.css"/>
+    <title>Flashcard Hóa Học</title>
+  </head>
+  <body>
+    <header>
+      <div id="wrapper">
+        <div id="header" id="bg">
+            <nav class="container">
+                   <img width="5%" src="https://cdn.glitch.global/dee1901e-9dff-40ca-8ac9-ab8283a91434/Logo%20App%20.png?v=1694181238812">         
+             <!-- <input type="checkbox" id="toggler">
+              <label for="toggler"><i class="fa-solid fa-bars" style="color: #000000; font-size: 30px;"></i></label>-->
+              <div class="menu">
+            <ul id="main-menu">
+               <li class="nav-item"><a href="home.html">Trang chủ</a></li>
+               <li class="nav-item"><a href="ai.html"> Nhận diện AI</a></li>
+               <li class="nav-item"><a href="minerals.html"> Khám phá quặng</a></li>
+               <li class="nav-item"><a class="active" href="periodictable.html">Bảng tuần hoàn</a></li>
+               <li class="nav-item"><a href="e-learning.html">E-Learning</a></li>
+               <li class="nav-item"><a href="game.html">Trò chơi</a></li>
+               <li class="nav-item"><a href="contact.html">Liên hệ</a></li>
+            </ul>
+              </div>
+          </nav>
+        </div>
+           </div>
+         </header>
+    <div class="search-container">
+    <input type="text" id="search-text" onkeydown="handleKeyDown(event)"
+           placeholder = "Search..."
+           required>
+    <button type="submit" id = "search-btn" onclick = "goToUrl()">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+      <ul id="suggestionList"></ul>
+      </div>
+    <h1 style="font-family: Roboto; color: #1089ff; margin-top : 50px; text-align: center;">
+      <b>Bảng tuần hoàn hóa học</b>
+    </h1>
+    <center>
+          <table>
+            <tr>
+              <td class = "H"><a href="hydrogen.html">1<br/>H</td></a>
+              <td class = "noBorder" colspan ="16"></td>
+            <td class = "He"><a href="helium.html">2<br/>He</td></a>
+            </tr>
+            <tr>
+              <td class = "Li"><a href="lithium.html">3<br/>Li</td></a>
+              <td class = "Be"><a href="beryllium.html">4<br/>Be</td></a>
+              <td class = "noBorder" colspan ="10"></td>
+              <td class = "B"><a href="boron.html">5<br/>B</td></a>
+              <td class = "C"><a href="carbon.html">6<br/>C</td></a>
+              <td class = "C"><a href="nitrogen.html">7<br/>N</td></a>
+              <td class = "C"><a href="oxygen.html">8<br/>O</td></a>
+              <td class = "C"><a href="fluorine.html">9<br/>F</td></a>
+              <td class = "He"><a href="neon.html">10<br/>Ne</td></a>
+            </tr>
+            <tr>
+              <td class = "Li"><a href="sodium.html">11<br/>Na</td></a>
+              <td class = "Be"><a href="magnesium.html">12<br/>Mg</td></a>
+              <td class = "noBorder" colspan ="10"></td>
+              <td class = "Al"><a href="aluminium.html">13<br/>Al</td></a>
+              <td class = "B"><a href="silicon.html">14<br/>Si</td></a>
+              <td class = "C"><a href="phosphorus.html">15<br/>P</td></a>
+              <td class = "C"><a href="sulfur.html">16<br/>S</td></a>
+              <td class = "C"><a href="chlorine.html">17<br/>Cl</td></a>
+              <td class = "He"><a href="argon.html">18<br/>Ar</td></a>
+            </tr>
+            <tr>
+              <td class = "Li"><a href="potassium.html">19<br/>K</td></a>
+              <td class = "Be"><a href="calcium.html">20<br/>Ca</td></a>
+              <td class = "Sc"><a href="scandium.html">21<br/>Sc</td></a>
+              <td class = "Sc"><a href="titanium.html">22<br/>Ti</td></a>
+              <td class = "Sc"><a href="vanadium.html">23<br/>V</td></a>
+              <td class = "Sc"><a href="chromium.html">24<br/>Cr</td></a>
+              <td class = "Sc"><a href="manganese.html">25<br/>Mn</td></a>
+              <td class = "Sc"><a href="iron.html">26<br/>Fe</td></a>
+              <td class = "Sc"><a href="cobalt.html">27<br/>Co</td></a>
+              <td class = "Sc"><a href="nickel.html">28<br/>Ni</td></a>
+              <td class = "Sc"><a href="copper.html">29<br/>Cu</td></a>
+              <td class = "Sc"><a href="zinc.html">30<br/>Zn</td></a>
+              <td class = "Al"><a href="gallium.html">31<br/>Ga</td></a>
+              <td class = "B"><a href="germanium.html">32<br/>Ge</td></a>
+              <td class = "B"><a href="arsenic.html">33<br/>As</td></a>
+              <td class = "C"><a href="selenium.html">34<br/>Se</td></a>
+              <td class = "C"><a href="bromine.html">35<br/>Br</td></a>
+              <td class = "He"><a href="krypton.html">36<br/>Kr</td></a>
+            </tr>
+            <tr>
+              <td class = "Li"><a href="rubidium.html">37<br/>Rb</td></a>
+              <td class = "Be"><a href="strontium.html">38<br/>Sr</td></a>
+              <td class = "Sc"><a href="yttrium.html">39<br/>Y</td></a>
+              <td class = "Sc"><a href="zirconium.html">40<br/>Zr</td></a>
+              <td class = "Sc"><a href="niobium.html">41<br/>Nb</td></a>
+              <td class = "Sc"><a href="molybdenum.html">42<br/>Mo</td></a>
+              <td class = "Sc"><a href="technetium.html">43<br/>Tc</td></a>
+              <td class = "Sc"><a href="ruthenium.html">44<br/>Ru</td></a>
+              <td class = "Sc"><a href="rhodium.html">45<br/>Rh</td></a>
+              <td class = "Sc"><a href="palladium.html">46<br/>Pd</td></a>
+              <td class = "Sc"><a href="silver.html">47<br/>Ag</td></a>
+              <td class = "Sc"><a href="cadmium.html">48<br/>Cd</td></a>
+              <td class = "Al"><a href="indium.html">49<br/>In</td></a>
+              <td class = "Al"><a href="tin.html">50<br/>Sn</td></a>
+              <td class = "B"><a href="antimony.html">51<br/>Sb</td></a>
+              <td class = "B"><a href="tellurium.html">52<br/>Te</td></a>
+              <td class = "C"><a href="iodine.html">53<br/>I</td></a>
+              <td class = "He"><a href="xenon.html">54<br/>Xe</td></a>
+            </tr>
+            <tr>
+              <td class = "Li"><a href="caesium.html">55<br/>Cs</td></a>
+              <td class = "Be"><a href="barium.html">56<br/>Ba</td></a>
+              <td class = "La">57-71<br/> </td>
+              <td class = "Sc"><a href="hafnium.html">72<br/>Hf</td></a>
+              <td class = "Sc"><a href="tantalum.html">73<br/>Ta</td></a>
+              <td class = "Sc"><a href="tungsten.html">74<br/>W</td></a>
+              <td class = "Sc"><a href="rhenium.html">75<br/>Re</td></a>
+              <td class = "Sc"><a href="osmium.html">76<br/>Os</td></a>
+              <td class = "Sc"><a href="iridium.html">77<br/>Ir</td></a>
+              <td class = "Sc"><a href="platinum.html">78<br/>Pt</td></a>
+              <td class = "Sc"><a href="gold.html">79<br/>Au</td></a>
+              <td class = "Sc"><a href="mercury.html">80<br/>Hg</td></a>
+              <td class = "Al"><a href="thallium.html">81<br/>Tl</td></a>
+              <td class = "Al"><a href="lead.html">82<br/>Pb</td></a>
+              <td class = "Al"><a href="bismuth.html">83<br/>Bi</td></a>
+              <td class = "Al"><a href="polonium.html">84<br/>Po</td></a>
+              <td class = "Al"><a href="astatine.html">85<br/>At</td></a>
+              <td class = "He"><a href="radon.html">86<br/>Rn</td></a>
+            </tr>
+            <tr>
+              <td class = "Li"><a href="francium.html">87<br/>Fr</td></a>
+              <td class = "Be"><a href="radium.html">88<br/>Ra</td></a>
+              <td class = "Ac">89-103<br/> </td>
+              <td class = "Sc"><a href="rutherfordium.html">104<br/>Rf</td></a>
+              <td class = "Sc"><a href="dubnium.html">105<br/>Db</td></a>
+              <td class = "Sc"><a href="seaborgium.html">106<br/>Sg</td></a>
+              <td class = "Sc"><a href="bohrium.html">107<br/>Bh</td></a>
+              <td class = "Sc"><a href="hassium.html">108<br/>Hs</td></a>
+              <td class = "Mt"><a href="meitnerium.html">109<br/>Mt</td></a>
+              <td class = "Mt"><a href="darmstadtium.html">110<br/>Ds</td></a>
+              <td class = "Mt"><a href="roentgenium.html">111<br/>Rg</td></a>
+              <td class = "Mt"><a href="copernicium.html">112<br/>Cn</td></a>
+              <td class = "Mt"><a href="nihonium.html">113<br/>Nh</td></a>
+              <td class = "Mt"><a href="flerovium.html">114<br/>Fl</td></a>
+              <td class = "Mt"><a href="moscovium.html">115<br/>Mc</td></a>
+              <td class = "Mt"><a href="livermorium.html">116<br/>Lv</td></a>
+              <td class = "Mt"><a href="tennessine.html">117<br/>Ts</td></a>
+              <td class = "Mt"><a href="oganesson.html">118<br/>Og</td></a>
+            </tr>
+          </table>
+          <br/>
+          <table>
+            <tr>
+              <td class = "La"><a href="lanthanum.html">57<br/>La</td></a>
+              <td class = "La"><a href="cerium.html">58<br/>Ce</td></a>
+              <td class = "La"><a href="praseodymium.html">59<br/>Pr</td></a>
+              <td class = "La"><a href="neodymium.html">60<br/>Nd</td></a>
+              <td class = "La"><a href="promethium.html">61<br/>Pm</td></a>
+              <td class = "La"><a href="samarium.html">62<br/>Sm</td></a>
+              <td class = "La"><a href="europium.html">63<br/>Eu</td></a>
+              <td class = "La"><a href="gadolinium.html">64<br/>Gd</td></a>
+              <td class = "La"><a href="terbium.html">65<br/>Tb</td></a>
+              <td class = "La"><a href="dysprosium.html">66<br/>Dy</td></a>
+              <td class = "La"><a href="holmium.html">67<br/>Ho</td></a>
+              <td class = "La"><a href="erbium.html">68<br/>Er</td></a>
+              <td class = "La"><a href="thulium.html">69<br/>Tm</td></a>
+              <td class = "La"><a href="ytterbium.html">70<br/>Yb</td></a>
+              <td class = "La"><a href="lutetium.html">71<br/>Lu</td></a>
+            </tr>
+            <tr>
+              <td class = "Ac"><a href="actinium.html">89<br/>Ac</td></a>
+              <td class = "Ac"><a href="thorium.html">90<br/>Th</td></a>
+              <td class = "Ac"><a href="protactinium.html">91<br/>Pa</td></a>
+              <td class = "Ac"><a href="uranium.html">92<br/>U</td></a>
+              <td class = "Ac"><a href="neptunium.html">93<br/>Np</td></a>
+              <td class = "Ac"><a href="plutonium.html">94<br/>Pu</td></a>
+              <td class = "Ac"><a href="americium.html">95<br/>Am</td></a>
+              <td class = "Ac"><a href="curium.html">96<br/>Cm</td></a>
+              <td class = "Ac"><a href="berkelium.html">97<br/>Bk</td></a>
+              <td class = "Ac"><a href="californium.html">98<br/>Cf</td></a>
+              <td class = "Ac"><a href="einsteinium.html">99<br/>Es</td></a>
+              <td class = "Ac"><a href="fermium.html">100<br/>Fm</td></a>
+              <td class = "Ac"><a href="mendelevium.html">101<br/>Md</td></a>
+              <td class = "Ac"><a href="nobelium.html">102<br/>No</td></a>
+              <td class = "Ac"><a href="lawrencium.html">103<br/>Lr</td></a>
+            </tr>
+          </table>
+          </center>
+  </body>
+<script>
+    function handleKeyDown(event) {
+      if (event.key === 'Enter') {
+        goToUrl();
+      }
+    }
+
+    function goToUrl() {
+      
+      var Url = isValidUrl();
+      var test = document.getElementById('search-text').value;
+      if ( Url == test )
+      {
+        alert("không tìm thấy bất cứ thứ gì liên quan");
+      }
+      else{
+        window.location.href = Url;
+      }
+    }
+
+    function isValidUrl(url) {
+      var pattern = document.getElementById('search-text').value;
+      pattern = convertToLowerCase(pattern);
+      pattern = capitalizeFirstLetter(pattern);
+      var kt = 0;
+      if ( pattern == "Hydrogen" )
+      {
+        pattern = "hydrogen.html";
+        kt = 1;
+      }
+      if ( pattern == "Heliun" )
+      {
+        pattern = "helium.html";
+        kt = 1;
+      }
+      if ( pattern == "Lithium" )
+      {
+        pattern = "lithium.html";
+        kt = 1;
+      }
+      //đổi link thành tên file .html vd: beryllium.html//
+      if ( pattern == "Beryllium" )
+      {
+        pattern = "beryllium.html";
+        kt = 1;
+      }
+      if ( pattern == "Boron" )
+      {
+        pattern = "boron.html";
+        kt = 1;
+      }
+      if ( pattern == "Carbon" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/carbon.html";
+        kt = 1;
+      }
+      if ( pattern == "Nitrogen" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/nitrogen.html";
+        kt = 1;
+      }
+      if ( pattern == "Oxygen" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/oxygen.html";
+        kt = 1;
+      }
+      if ( pattern == "Fluorine" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/fluorine.html";
+        kt = 1;
+      }
+      if ( pattern == "Neon" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/neon.html";
+        kt = 1;
+      }
+      if ( pattern == "Sodium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/sodium.html";
+        kt = 1;
+      }
+      if ( pattern == "Magnesium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/magnesium.html";
+        kt = 1;
+      }
+      if ( pattern == "Aluminum" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/aluminium.html";
+        kt = 1;
+      }
+      if ( pattern == "Silicon" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/silicon.html";
+        kt = 1;
+      }
+      if ( pattern == "Phosphorus" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/phosphorus.html";
+        kt = 1;
+      }
+      if ( pattern == "Sulfur" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/sulfur.html";
+        kt = 1;
+      }
+      if ( pattern == "Chlorine" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/chlorine.html";
+        kt = 1;
+      }
+      if ( pattern == "Argon" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/argon.html";
+        kt = 1;
+      }
+      if ( pattern == "Potassium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/potassium.html";
+        kt = 1;
+      }
+      if ( pattern == "Calcium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/calcium.html";
+        kt = 1;
+      }
+      if ( pattern == "Scandium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/scandium.html";
+        kt = 1;
+      }
+      if ( pattern == "Titanium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/titanium.html";
+        kt = 1;
+      }
+      if ( pattern == "Vanadium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/vanadium.html";
+        kt = 1;
+      }
+      if ( pattern == "Chromium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/chromium.html";
+        kt = 1;
+      }
+      if ( pattern == "Manganese" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/manganese.html";
+        kt = 1;
+      }
+      if ( pattern == "Iron" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/iron.html";
+        kt = 1;
+      }
+      if ( pattern == "Cobalt" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/cobalt.html";
+        kt = 1;
+      }
+      if ( pattern == "Nikel" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/nickel.html";
+        kt = 1;
+      }
+      if ( pattern == "Copper" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/copper.html";
+        kt = 1;
+      }
+      if ( pattern == "Zinc" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/zinc.html";
+        kt = 1;
+      }
+      if ( pattern == "Galium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/gallium.html";
+        kt = 1;
+      }
+      if ( pattern == "Germanium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/germanium.html";
+        kt = 1;
+      }
+      if ( pattern == "Arsenic" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/arsenic.html";
+        kt = 1;
+      }
+      if ( pattern == "Selenium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/selenium.html";
+        kt = 1;
+      }
+      if ( pattern == "Bromine" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/bromine.html";
+        kt = 1;
+      }
+      if ( pattern == "Krypton" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/krypton.html";
+        kt = 1;
+      }
+      if ( pattern == "Rubidium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/rubidium.html";
+        kt = 1;
+      }
+      if ( pattern == "Strontium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/strontium.html";
+        kt = 1;
+      }
+      if ( pattern == "Ytrium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/yttrium.html";
+        kt = 1;
+      }
+      if ( pattern == "Zirconium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/zirconium.html";
+        kt = 1;
+      }
+      if ( pattern == "Niobium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/niobium.html";
+        kt = 1;
+      }
+      if ( pattern == "Molybdenum" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/molybdenum.html";
+        kt = 1;
+      }
+      if ( pattern == "Technetium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/technetium.html";
+        kt = 1;
+      }
+      if ( pattern == "Ruthenium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/ruthenium.html";
+        kt = 1;
+      }
+      if ( pattern == "Rhodium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/rhodium.html";
+        kt = 1;
+      }
+      if ( pattern == "Paladium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/palladium.html";
+        kt = 1;
+      }
+      if ( pattern == "Silver" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/silver.html";
+        kt = 1;
+      }
+      if ( pattern == "Cadmium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/cadmium.html";
+        kt = 1;
+      }
+      if ( pattern == "Indium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/indium.html";
+        kt = 1;
+      }
+      if ( pattern == "Tin" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/tin.html";
+        kt = 1;
+      }
+      if ( pattern == "Antimony" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/antimony.html";
+        kt = 1;
+      }
+      if ( pattern == "Tellurium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/tellurium.html";
+        kt = 1;
+      }
+      if ( pattern == "Iodine" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/iodine.html";
+        kt = 1;
+      }
+      if ( pattern == "Xenon" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/xenon.html";
+        kt = 1;
+      }
+      if ( pattern == "Caesium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/caesium.html";
+        kt = 1;
+      }
+      if ( pattern == "Barium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/barium.html";
+        kt = 1;
+      }
+      if ( pattern == "Lanthanum" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/lathanum.html";
+        kt = 1;
+      }
+      if ( pattern == "Cerium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/cerium.html";
+        kt = 1;
+      }
+      if ( pattern == "Praseodymium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/praseodymium.html";
+        kt = 1;
+      }
+      if ( pattern == "Neodymium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/neodymium.html";
+        kt = 1;
+      }
+      if ( pattern == "Promethium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/promethium.html";
+        kt = 1;
+      }
+      if ( pattern == "Samarium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/samarium.html";
+        kt = 1;
+      }
+      if ( pattern == "Europium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/europium.html";
+        kt = 1;
+      }
+      if ( pattern == "Gadonlinium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/gadonlinium.html";
+        kt = 1;
+      }
+      if ( pattern == "Terbium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/terbium.html";
+        kt = 1;
+      }
+      if ( pattern == "Dysprosium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/dysprosium.html";
+        kt = 1;
+      }
+      if ( pattern == "Holmium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/holmium.html";
+        kt = 1;
+      }
+      if ( pattern == "Erbium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/erbium.html";
+        kt = 1;
+      }
+      if ( pattern == "Thulium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/thulium.html";
+        kt = 1;
+      }
+      if ( pattern == "Yterbium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/yterbium.html";
+        kt = 1;
+      }
+      if ( pattern == "Lutetium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/lutetium.html";
+        kt = 1;
+      }
+      if ( pattern == "Hafnium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/hafnium.html";
+        kt = 1;
+      }
+      if ( pattern == "Tantalum" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/tantalum.html";
+        kt = 1;
+      }
+      if ( pattern == "Tungsten" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/tungsten.html";
+        kt = 1;
+      }
+      if ( pattern == "Rhenium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/rhenium.html";
+        kt = 1;
+      }
+      if ( pattern == "Osmium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/osmium.html";
+        kt = 1;
+      }
+      if ( pattern == "Iridium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/iridium.html";
+        kt = 1;
+      }
+      if ( pattern == "Plantinum" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/platinum.html";
+        kt = 1;
+      }
+      if ( pattern == "Gold" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/gold.html";
+        kt = 1;
+      }
+      if ( pattern == "Mercury" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/mercury.html";
+        kt = 1;
+      }
+      if ( pattern == "Thalium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/thalium.html";
+        kt = 1;
+      }
+      if ( pattern == "Lead" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/lead.html";
+        kt = 1;
+      }
+      if ( pattern == "Bismuth" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/bismuth.html";
+        kt = 1;
+      }
+      if ( pattern == "Polonium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/polonium.html";
+        kt = 1;
+      }
+      if ( pattern == "Astatine" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/astatine.html";
+        kt = 1;
+      }
+      if ( pattern == "Radon" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/radon.html";
+        kt = 1;
+      }
+      if ( pattern == "Francium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/fracium.html";
+        kt = 1;
+      }
+      if ( pattern == "Radium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/radium.html";
+        kt = 1;
+      }
+      if ( pattern == "Actinium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/actinium.html";
+        kt = 1;
+      }
+      if ( pattern == "Thorium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/thorium.html";
+        kt = 1;
+      }
+      if ( pattern == "Protactinium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/protactinium.html";
+        kt = 1;
+      }
+      if ( pattern == "Uranium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/uranium.html";
+        kt = 1;
+      }
+      if ( pattern == "Neptunium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/neptunium.html";
+        kt = 1;
+      }
+      if ( pattern == "Plutonium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/plutonium.html";
+        kt = 1;
+      }
+      if ( pattern == "Americium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/americium.html";
+        kt = 1;
+      }
+      if ( pattern == "Curium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/curium.html";
+        kt = 1;
+      }
+      if ( pattern == "Berkelium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/berkelium.html";
+        kt = 1;
+      }
+      if ( pattern == "Californium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/californium.html";
+        kt = 1;
+      }
+      if ( pattern == "Einsteinium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/einsteinium.html";
+        kt = 1;
+      }
+      if ( pattern == "Fermium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/fermium.html";
+        kt = 1;
+      }
+      if ( pattern == "Mendelevium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/mendelevium.html";
+        kt = 1;
+      }
+      if ( pattern == "Nobelium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/nobelium.html";
+        kt = 1;
+      }
+      if ( pattern == "Lawrencium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/lawrencium.html";
+        kt = 1;
+      }
+      if ( pattern == "Rutherfordium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/rutherfordium.html";
+        kt = 1;
+      }
+      if ( pattern == "Dubnium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/dubnium.html";
+        kt = 1;
+      }
+      if ( pattern == "Seaborgium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/seaborgium.html";
+        kt = 1;
+      }
+      if ( pattern == "Bohrium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/bohrium.html";
+        kt = 1;
+      }if ( pattern == "Hassium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/hassium.html";
+        kt = 1;
+      }
+      if ( pattern == "Meitnerium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/meitnerium.html";
+        kt = 1;
+      }
+      if ( pattern == "Darmstadtium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/darmstadtium.html";
+        kt = 1;
+      }
+      if ( pattern == "Roentgenium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/roentgenium.html";
+        kt = 1;
+      }
+      if ( pattern == "Copernicium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/copernicium.html";
+        kt = 1;
+      }
+      if ( pattern == "Nihonium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/nihonium.html";
+        kt = 1;
+      }
+      if ( pattern == "Flerovium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/flerovium.html";
+        kt = 1;
+      }
+      if ( pattern == "Moscovium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/moscovium.html";
+        kt = 1;
+      }
+      if ( pattern == "Livermorium" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/livermorium.html";
+        kt = 1;
+      }
+      if ( pattern == "Tennessine" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/tennessine.html";
+        kt = 1;
+      }
+      if ( pattern == "Oganesson" )
+      {
+        pattern = "https://delicate-metal-ocelot.glitch.me/oganesson.html";
+        kt = 1;
+      }
+      if ( kt == 0 )
+        return pattern;
+      return pattern;
+    }
+  function convertToLowerCase(inputString){
+  return inputString.toLowerCase();
+}
+  function capitalizeFirstLetter(inputString) {
+  return inputString.charAt(0).toUpperCase() + inputString.slice(1);
+}
+    document.getElementById('search-text').addEventListener('input', function() {
+    let inputValue = this.value.toLowerCase();
+    let suggestionList = document.getElementById('suggestionList');
+    suggestionList.innerHTML = '';
+
+    if (inputValue.length > 0) {
+        let suggestions = ['Hydrogen', 'Helium', 'Lithium', 'Beryllium', 'Boron', 'Carbon', 'Nitrogen', 'Oxygen', 'Fluorine','Neon', 'Sodium', 'Magnesium', 'Aluminum', 'Silicon', 'Phosphorus', 'Sulfur', 'Chlorine', 'Argon', 'Potassium', 'Calcium', 'Scandium', 'Titanium', 'Vanadium', 'Chromium', 'Manganese', 'Iron', 'Cobalt', 'Nikel', 'Copper', 'Zinc', 'Galium', 'Germanium', 'Arsenic', 'Selenium', 'Bromine', 'Krypton', 'Rubidium', 'Strontium', 'Ytrium', 'Zirconium', 'Niobium', 'Molybdenum', 'Technetium', 'Ruthenium', 'Rhodium', 'Paladium', 'Silver', 'Cadmium', 'Indium', 'Tin', 'Antimony', 'Tellurium', 'Iodine', 'Xenon', 'Caesium', 'Barium', 'Lanthanum', 'Cerium', 'Praseodymium', 'Neodymium', 'Promethium', 'Samarium', 'Europium', 'Gadonlinium', 'Terbium', 'Dysprosium', 'Holmium', 'Erbium', 'Thulium', 'Yterbium', 'Lutetium', 'Hafnium', 'Tantalum', 'Tungsten', 'Rhenium', 'Osmium', 'Iridium', 'Plantinum', 'Gold', 'Mercury', 'Thalium', 'Lead', 'Bismuth', 'Polonium', 'Astatine', 'Radon', 'Francium', 'Radium', 'Actinium', 'Thorium', 'Protactinium', 'Uranium', 'Neptunium', 'Plutonium', 'Americium', 'Curium', 'Berkelium', 'Californium', 'Einsteinium', 'Fermium', 'Mendelevium', 'Nobelium', 'Lawrencium', 'Rutherfordium', 'Dubnium', 'Seaborgium', 'Bohrium', 'Hassium', 'Meitnerium', 'Darmstadtium', 'Roentgenium', 'Copernicium', 'Nihonium', 'Flerovium', 'Moscovium', 'Livermorium', 'Tennessine', 'Oganesson'];
+
+        suggestions.filter(function(item) {
+            if (item.toLowerCase().includes(inputValue)) {
+                let li = document.createElement('li');
+                li.textContent = item;
+                suggestionList.appendChild(li);
+
+                li.addEventListener('click', function() {
+                    document.getElementById('search-text').value = item;
+                    suggestionList.innerHTML = '';
+                });
+            }
+        });
+    }
+});
+  </script>
+</html>

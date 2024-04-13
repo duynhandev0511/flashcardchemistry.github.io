@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+#container {
+  position: fixed;
+  z-index: 1001;
+  background-color: transparent;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#bg{
+  background: #fff;
+}
+
+body{
+  min-height: 100vh;
+  background:#1c0522;
+  overflow-x: hidden;
+}
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: left;
+  z-index: 1000;
+}
+
+header ul{
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: white;
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+header ul li a:hover , 
+header ul li a.active {
+  background: #fff;
+  color:black;
+}
+
+section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+section::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top,#1c0522,transparent);
+  z-index: 100;
+}
+
+section img{
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#text {
+  z-index: 9;
+  position: absolute;
+  white-space: nowrap;
+  font-size: 7.5vw;
+  color:#fff;
+}
+
+#btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background: #fff;
+  color:black;
+  z-index: 9;
+  font-size: 2em;
+  transform: translateY(100px);
+  margin-top: 15px;
+}
+
+#next {
+  font-size: 4em;
+  float: right;
+}
+
+#nextl {
+  font-size: 4em;
+  float: left;
+}
+
+.sec {
+  position: relative;
+  padding: 100px;
+  background: #1c0522;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url(); /* Đường dẫn đến hình ảnh nền */
+  height: 90vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sec h2{
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color:#fff;
+}
+
+.sec p{
+  font-size: 1.2em;
+  color:#fff;
+}
+
+/**Cuprite**/
+#Cuprite{
+  width: 50%;
+  margin-top: 60px;
+  margin-left: -20px;
+}
+
+#btncp {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background: #fff;
+  color:black;
+  z-index: 9;
+  font-size: 1.5em;
+  transform: translateY(20px);
+}
+
+#btncpl {
+  display: inline-block;
+  text-decoration: none;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background: #fff;
+  color:black;
+  z-index: 9;
+  font-size: 1.5em;
+  float: right;
+  transform: translateY(20px);
+}
+
+/**Ảnh quặng Cuprite**/
+#imgCuprite img{
+  width: 65%;
+}
+
+/**Pyrite**/
+#Pyrite{
+  width: 50%;
+  margin-top: 60px;
+}
+
+.thi {
+  position: relative;
+  padding: 100px;
+  background: #1c0522;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url(); /* Đường dẫn đến hình ảnh nền */
+  height: 75vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.thi h2{
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color:#fff;
+}
+
+.thi p{
+  font-size: 1.2em;
+  color:#fff;
+}
+
+/**Ảnh quặng Pyrite**/
+#imgPyrite img{
+  width: 70%;
+  margin-left: 5px;
+}
+
+/**Fluorite**/
+#Fluorite{
+  width: 50%;
+  margin-top: 60px;
+}
+
+.fo {
+  position: relative;
+  padding: 100px;
+  background: #1c0522;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url(); /* Đường dẫn đến hình ảnh nền */
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fo h2{
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color:#fff;
+}
+
+.fo p{
+  font-size: 1.2em;
+  color:#fff;
+}
+
+/**Ảnh quặng Fluorite**/
+#imgFluorite img{
+  width: 70%;
+  margin-left: 5px;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-column-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-column-center {
+  text-align: center;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 30px; /* Khoảng cách giữa các icon */
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.rights-reserved {
+  margin-top: 10px; /* Khoảng cách giữa icon social và All rights reserved */
+}
+
+
+
+

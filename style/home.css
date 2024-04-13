@@ -1,0 +1,123 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+#texthome{
+  z-index: 9;
+  position: absolute;
+  white-space: nowrap;
+  font-size: 6.5vw;
+  text-shadow: 1px 1px 1px #000;
+  color:#fff;
+}
+
+.title-home{
+    font-size: 2.5em;
+    text-align: center;
+    color: #fff;
+}
+
+.intro{
+  position: relative;
+  padding: 100px;
+  background: #1c0522;
+  align-items: center;
+  background-image: url(); /* Đường dẫn đến hình ảnh nền */
+  height: 75vh;
+}
+
+#content-intro {
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.feature{
+  position: relative;
+  padding: 100px;
+  background: #1c0522;
+  background-image: url(); /* Đường dẫn đến hình ảnh nền */
+  height: 90vh;
+}
+
+.box-feature{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+/** 3 thẻ text tính năng **/
+
+#icon {
+  font-size: 4.5em;
+  color: #fff;
+  margin-left: 38%;
+}
+
+#content-feature {
+  width: 350px;
+  height: 350px;
+  margin-left: 25px;
+  margin-top: 40px;
+  position: relative;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+  background-color: #bb58ff;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#content-feature:hover{
+  transform: scale(1.05);
+}
+
+#content-feature p {
+  font-size: 20px;
+  text-align: justify;
+  color: #fff;
+}
+
+/**thẻ flashcard**/
+#imgFlashcard img{
+  width: 100%;
+  mix-blend-mode: screen;
+}
+
+/**giới thiệu quặng**/
+.minerals{
+  position: relative;
+  padding: 100px;
+  background: #1c0522;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url(); /* Đường dẫn đến hình ảnh nền */
+  height: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.minerals h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color:#fff;
+}
+
+.minerals p {
+  font-size: 1.2em;
+  color:#fff;
+}
+
+#imgminerals img {
+  width: 80%;
+  margin-left: 50px;
+}
