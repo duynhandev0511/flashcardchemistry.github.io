@@ -95,11 +95,27 @@
 function changeNavColorOnScroll() {
   var container = document.getElementById('container');
   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-    container.style.backgroundColor = "#9a9a9a"; // Màu nền mới khi cuộn
+    container.style.backgroundColor = "#1f1f1f"; // Màu nền mới khi cuộn
   } else {
     container.style.backgroundColor = "transparent"; // Màu nền ban đầu
   }
 }
     </script>
     </body>
+    <footer class="footer">
+      <div class="footer-column footer-column-left">
+      </div>
+      <div class="footer-column footer-column-center">
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="rights-reserved">All rights reserved</div>
+      </div>
+      <div class="footer-column column-right">
+        <!-- Column phải -->
+      </div>
+    </footer>
     </html>

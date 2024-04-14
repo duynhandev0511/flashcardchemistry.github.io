@@ -34,14 +34,14 @@
       </div>
     </header>
     <section>
-        <h2 id="texthome">Chemistry Flashcard</h2>
+        <h2 id="texthome"><span>Chemistry</span>&nbsp;<span>Flashcard</span></h2>
         <a href="#sec" id="btn">Explore</a>
         <img src="./background-remover/home.webp" id="bgheader">
     </section>
     <div class="intro" id="sec">
         <div id="content-intro">
             <h2 class="title-home">Giới thiệu</h2>
-        <p style="margin-top: 40px; font-size: 1.5em; text-align: center;">Trang web được tích hợp công nghệ Machine Learning có thể hỗ trợ cho người học trong quá trình sử dụng thẻ flashcard hóa học. Sự tích hợp dựa trên Teachable Machine (Machine Learning) của Google là 1 phương pháp học máy tự động, cho phép máy tính học hỏi và cải thiện hiệu suất của nó theo thời gian, cho phép máy tính tự động tìm ra các mô hình và quy tắc từ dữ liệu, và sử dụng chúng để dự đoán và phân loại các dữ liệu mới.</p>
+        <p style="margin-top: 40px; font-size: 1.5em; text-align: center;">Trang web được tích hợp công nghệ Machine Learning có thể hỗ trợ cho người học trong quá trình sử dụng thẻ flashcard hóa học. Sự tích hợp dựa trên Teachable Machine (Machine Learning) của Google là 1 phương pháp học máy tự động, cho phép máy tính học hỏi và cải thiện hiệu suất của nó theo thời gian, cho phép máy tính tự động tìm ra các mô hình và quy tắc từ dữ liệu, và sử dụng để dự đoán và phân loại các dữ liệu mới.</p>
         </div>
       </div>
     <div class="feature">
@@ -105,12 +105,42 @@
 function changeNavColorOnScroll() {
   var container = document.getElementById('container');
   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-    container.style.backgroundColor = "#9a9a9a"; // Màu nền mới khi cuộn
+    container.style.backgroundColor = "#1f1f1f"; // Màu nền mới khi cuộn
   } else {
     container.style.backgroundColor = "transparent"; // Màu nền ban đầu
   }
 }
+
+const titleElement = document.getElementById('texthome');
+const text = titleElement.innerText;
+titleElement.innerText = '';
+
+let i = 0;
+function type() {
+    if (i < text.length) {
+        titleElement.innerText += text.charAt(i);
+        i++;
+        setTimeout(type, 100); // Thay đổi tốc độ của hiệu ứng tại đây (ms)
+    }
+}
+
+type();
       </script>
     </body>
-    
+    <footer class="footer">
+      <div class="footer-column footer-column-left">
+      </div>
+      <div class="footer-column footer-column-center">
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <div class="rights-reserved">All rights reserved</div>
+      </div>
+      <div class="footer-column column-right">
+        <!-- Column phải -->
+      </div>
+    </footer>
     </html>

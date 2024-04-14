@@ -8,6 +8,20 @@
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
 }
+/*thanh cuộn */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+  border-radius: 100rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 100rem;
+}
 
 #container {
   position: fixed;
@@ -272,6 +286,61 @@ section img{
   margin-left: 5px;
 }
 
+/*card quặng */
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.card-container {
+  max-width: auto;
+  width: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-right: 10px;
+  width: 300px;
+  height: 350px;
+  border-radius: 15px;
+}
+
+.button-container {
+  text-align: center;
+}
+
+#see-all {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#see-all:hover {
+  background-color: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
+
 /* footer */
 .footer {
   display: flex;
@@ -307,6 +376,185 @@ section img{
   margin-top: 10px; /* Khoảng cách giữa icon social và All rights reserved */
 }
 
+/*ảnh quặng trong card */
+.imagecard {
+    width: 100%;
+    height: 230px; 
+    background-color: transparent; 
+    background-image: url('../mineralspng/hematite.png');
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-size: 90%;
+    border-top-left-radius: 8px; 
+    border-top-right-radius: 8px; 
+    margin-bottom: 20px;
+    transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
 
+.imagecard:hover {
+  transform: scale(1.05);
+}
 
+.imagecard2 {
+  width: 100%;
+  height: 230px; 
+  background-color: transparent; 
+  background-image: url('../mineralspng/Chalcopyrite.png');
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: 90%;
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
+  margin-bottom: 20px;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.imagecard2:hover {
+transform: scale(1.05);
+}
+
+.imagecard3 {
+  width: 100%;
+  height: 230px; 
+  background-color: transparent; 
+  background-image: url('../mineralspng/Siderite.png');
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: 90%;
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
+  margin-bottom: 20px;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.imagecard3:hover {
+transform: scale(1.05);
+}
+
+.imagecard4 {
+  width: 100%;
+  height: 230px; 
+  background-color: transparent; 
+  background-image: url('../mineralspng/Chlorargyrite.png');
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: 90%;
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
+  margin-bottom: 20px;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.imagecard4:hover {
+transform: scale(1.05);
+}
+
+.imagecard5 {
+  width: 100%;
+  height: 230px; 
+  background-color: transparent; 
+  background-image: url('../mineralspng/sylvite.png');
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: 90%;
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
+  margin-bottom: 20px;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.imagecard5:hover {
+transform: scale(1.05);
+}
+
+.imagecard6 {
+  width: 100%;
+  height: 230px; 
+  background-color: transparent; 
+  background-image: url('../mineralspng/anhydrite.png');
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: 90%;
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
+  margin-bottom: 20px;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.imagecard6:hover {
+transform: scale(1.05);
+}
+
+.imagecard7 {
+  width: 100%;
+  height: 230px; 
+  background-color: transparent; 
+  background-image: url('../mineralspng/Chalcocite.png');
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: 90%;
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
+  margin-bottom: 20px;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.imagecard7:hover {
+transform: scale(1.05);
+}
+
+.imagecard8 {
+  width: 100%;
+  height: 230px; 
+  background-color: transparent; 
+  background-image: url('../mineralspng/magnesite.png');
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: 90%;
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
+  margin-bottom: 20px;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.imagecard8:hover {
+transform: scale(1.05);
+}
+
+.titlecard{
+  display: flex;
+  padding: 10px;
+}
+
+.view-button {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 15px;
+  border-radius: 20px;
+  margin-left: 20px;
+}
+
+.view-button a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.view-button1 {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 15px;
+  border-radius: 20px;
+  margin-left: 65px;
+}
+
+.view-button1 a {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+}
 
