@@ -84,22 +84,6 @@
         </div>
       </div>
       <script>
-        let texthome = document.getElementById('texthome');
-        let btn = document.getElementById('btn');
-        let bgheader = document.getElementById('bgheader');
-        window.addEventListener('scroll', function(){
-          let value = window.scrollY;
-          texthome.style.marginTop = value * 0.7 + 'px';
-          header.style.top = value * 0.5 + 'px';
-        })
-  
-        window.addEventListener("scroll", function() {
-    var sec = document.querySelector(".sec");
-    var scrollPosition = window.pageYOffset;
-  
-    sec.style.backgroundPositionY = scrollPosition * 0.7 + "px"; // Điều chỉnh tốc độ scroll parallax bằng cách thay đổi hệ số
-  });
-  
   window.onscroll = function() {changeNavColorOnScroll()};
 
 function changeNavColorOnScroll() {

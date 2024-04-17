@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bauxite</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+  <center>
+    <body>
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <img src="./flashcard/Bauxite.jpg">
+        </div>
+        <div class="flip-card-back">
+            <img src="./flashcard/Bauxite(sau).jpg">
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+  </center>
+</html>
+
+<style>
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  z-index: 2;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+.is-flipped {
+  transform: rotateY(180deg);
+}
+</style>
+
+<script>
+  
+document.querySelector('.flip-card').addEventListener('click', function() {
+    // Biến kiểm soát để xác định khi nào có thể click tiếp theo
+    if (this.classList.contains('click-disabled')) {
+        // Nếu class 'click-disabled' đã được thêm, ngăn không cho hành động tiếp tục
+        return;
+    }
+    // Thêm class để tạm thời vô hiệu hóa click tiếp theo
+    this.classList.add('click-disabled');
+
+    // Thực hiện lật ảnh
+    document.querySelector('.flip-card-inner').classList.toggle('is-flipped');
+
+    // Sau độ trễ 0.5 giây, cho phép click lại
+    setTimeout(() => {
+        this.classList.remove('click-disabled');
+    }, 1000); // 500 milliseconds = 0.5 seconds
+});
+
+
+
+</script>

@@ -171,6 +171,7 @@ section img{
 .sec p{
   font-size: 1.2em;
   color:#fff;
+  text-align: justify;
 }
 
 /**Cuprite**/
@@ -240,6 +241,7 @@ section img{
 .thi p{
   font-size: 1.2em;
   color:#fff;
+  text-align: justify;
 }
 
 /**Ảnh quặng Pyrite**/
@@ -278,6 +280,7 @@ section img{
 .fo p{
   font-size: 1.2em;
   color:#fff;
+  text-align: justify;
 }
 
 /**Ảnh quặng Fluorite**/
@@ -518,6 +521,150 @@ transform: scale(1.05);
 }
 
 .imagecard8:hover {
+transform: scale(1.05);
+}
+
+.imagecard9 {
+  width: 100%;
+  height: 230px; 
+  background-color: transparent; 
+  background-image: url('../mineralspng/Bauxite.png');
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: 90%;
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
+  margin-bottom: 20px;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.imagecard9:hover {
+transform: scale(1.05);
+}
+
+.imagecard10 {
+  width: 100%;
+  height: 230px; 
+  background-color: transparent; 
+  background-image: url('../mineralspng/Calcite.png');
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: 90%;
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
+  margin-bottom: 20px;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.imagecard10:hover {
+transform: scale(1.05);
+}
+
+.imagecard11 {
+  width: 100%;
+  height: 230px; 
+  background-color: transparent; 
+  background-image: url('../mineralspng/carnallite.png');
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: 90%;
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
+  margin-bottom: 20px;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.imagecard11:hover {
+transform: scale(1.05);
+}
+
+.imagecard12 {
+  width: 100%;
+  height: 230px; 
+  background-color: transparent; 
+  background-image: url('../mineralspng/Chromite.png');
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: 90%;
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
+  margin-bottom: 20px;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.imagecard12:hover {
+transform: scale(1.05);
+}
+
+.imagecard13 {
+  width: 100%;
+  height: 230px; 
+  background-color: transparent; 
+  background-image: url('../mineralspng/Cryolite.png');
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: 90%;
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
+  margin-bottom: 20px;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.imagecard13:hover {
+transform: scale(1.05);
+}
+
+.imagecard14 {
+  width: 100%;
+  height: 230px; 
+  background-color: transparent; 
+  background-image: url('../mineralspng/Dolomite.png');
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: 90%;
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
+  margin-bottom: 20px;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.imagecard14:hover {
+transform: scale(1.05);
+}
+
+.imagecard15 {
+  width: 100%;
+  height: 230px; 
+  background-color: transparent; 
+  background-image: url('../mineralspng/gypsum.png');
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: 90%;
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
+  margin-bottom: 20px;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.imagecard15:hover {
+transform: scale(1.05);
+}
+
+.imagecard16 {
+  width: 100%;
+  height: 230px; 
+  background-color: transparent; 
+  background-image: url('../mineralspng/Kaolinite.png');
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: 90%;
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
+  margin-bottom: 20px;
+  transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+
+.imagecard16:hover {
 transform: scale(1.05);
 }
 
