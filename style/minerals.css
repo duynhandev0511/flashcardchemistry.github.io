@@ -705,3 +705,70 @@ transform: scale(1.05);
   text-decoration: none;
 }
 
+#menu-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #container {
+    height: auto;
+    padding: 10px; /* Add some padding for better spacing */
+    display: inline-flex;
+    justify-content: space-between; /* Căn các phần tử con ra hai bên */
+    align-items: center; /* Căn giữa theo chiều dọc */
+  }
+  header {
+    padding: 10px 20px; /* Reduce padding for smaller screens */
+  }
+
+  header ul {
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  header ul li {
+    margin-left: 0; /* Remove margin for smaller screens */
+    margin-bottom: 10px; /* Add some space between items */
+  }
+  #texthome{
+    z-index: 9;
+    position: absolute;
+    white-space: nowrap;
+    font-size: 8vw;
+    text-shadow: 1px 1px 1px #000;
+    color:#fff;
+    border-right: 2px solid; /* Tạo hiệu ứng như con trỏ đánh máy */
+    overflow: hidden;
+    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+  }
+  .menu {
+    display: none;
+    max-height: 0;
+    width: 100%;
+  }
+  
+  .menu.open {
+    display: block;
+  }
+  #main-menu {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color:#1f1f1f ;
+  }
+  #toggler:checked ~ .menu {
+    max-height: 100%;
+  }
+  #menu-toggle {
+    background-color: transparent; 
+    border: none; /* Loại bỏ viền */
+    padding: 10px; /* Thêm padding cho nút */
+    border-radius: 5px; /* Bo tròn góc cho nút */
+    cursor: pointer; /* Hiển thị biểu tượng con trỏ khi di chuột qua nút */
+    display: flex;
+  }
+  #container img {
+    width: 15%;
+  }
+}
+

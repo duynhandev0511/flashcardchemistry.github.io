@@ -12,27 +12,26 @@
   </head>
   <body>
     <header>
- <div id="wrapper">
-   <div id="header" id="bg">
-       <nav id="container">
-              <img width="5%" src="https://cdn.glitch.global/dee1901e-9dff-40ca-8ac9-ab8283a91434/Logo%20App%20.png?v=1694181238812">         
-        <!-- <input type="checkbox" id="toggler">
-         <label for="toggler"><i class="fa-solid fa-bars" style="color: #000000; font-size: 30px;"></i></label>-->
-         <div class="menu">
-       <ul id="main-menu">
-          <li class="nav-item"><a class="active" href="index.html">Trang chủ</a></li>
-          <li class="nav-item"><a href="ai.html"> Nhận diện AI</a></li>
-          <li class="nav-item"><a href="minerals.html"> Khám phá quặng</a></li>
-          <li class="nav-item"><a href="periodictable.html">Bảng tuần hoàn</a></li>
-          <li class="nav-item"><a href="e-learning.html">E-Learning</a></li>
-          <li class="nav-item"><a href="game.html">Trò chơi</a></li>
-          <li class="nav-item"><a href="contact.html">Liên hệ</a></li>
-       </ul>
-         </div>
-     </nav>
-   </div>
+      <div id="wrapper">
+        <div id="header" id="bg">
+          <nav id="container">
+            <img width="5%" src="https://cdn.glitch.global/dee1901e-9dff-40ca-8ac9-ab8283a91434/Logo%20App%20.png?v=1694181238812"
+            <div class="menu">
+              <ul id="main-menu">
+                <li class="nav-item"><a class="active" href="index.html">Trang chủ</a></li>
+                <li class="nav-item"><a href="ai.html"> Nhận diện AI</a></li>
+                <li class="nav-item"><a href="minerals.html"> Khám phá quặng</a></li>
+                <li class="nav-item"><a href="periodictable.html">Bảng tuần hoàn</a></li>
+                <li class="nav-item"><a href="e-learning.html">E-Learning</a></li>
+                <li class="nav-item"><a href="game.html">Trò chơi</a></li>
+                <li class="nav-item"><a href="contact.html">Liên hệ</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
+    
     <section>
         <h2 id="texthome"><span>Chemistry</span>&nbsp;<span>Flashcard</span></h2>
         <a href="#sec" id="btn">Explore</a>
@@ -77,10 +76,22 @@
         <div id="Pyrite">
           <h2>Khoáng sản</h2>
           <p>"Khám Phá Khoáng Sản: Bí Mật Dưới Đất": Dẫn dắt bạn vào một cuộc phiêu lưu thú vị khám phá về vẻ đẹp và ý nghĩa giáo dục của khoáng sản. Từ những viên đá quý lấp lánh đến những khoáng chất quý giá, hãy cùng chúng tôi khám phá thế giới kỳ diệu dưới lòng đất và hiểu sâu hơn về vai trò quan trọng của chúng trong cuộc sống hàng ngày và công nghiệp hiện đại.</p>
-          <a href="#" id="nextl"><i class="fa-regular fa-circle-down fa-fade" style="color: #ffffff;"></i></a><a href="minerals.html" id="btncpl">Khám phá ngay</a>
+          <a href="#fiv" id="nextl"><i class="fa-regular fa-circle-down fa-fade" style="color: #ffffff;"></i></a><a href="minerals.html" id="btncpl">Khám phá ngay</a>
         </div>
         <div id="imgminerals">
           <img id="minerals" src="./background-remover/minerals.png">
+        </div>
+      </div>
+
+      <div class="fo" id="fiv">
+        <div id="imgFlashcard">
+          <img id="Fluorite" src="./background-remover/electron.png">
+        </div>
+        <div id="Fluorite">
+          <h2>3D Periodic table</h2>
+        <p>
+          Trang web này là một bảng tuần hoàn tương tác độc đáo, kết hợp giữa nghệ thuật và khoa học, cho phép người dùng khám phá các yếu tố hóa học một cách thú vị và sinh động.</p>
+        <a href="https://artsexperiments.withgoogle.com/periodic-table/?fbclid=IwAR1so2zvXy65BIvssds2M-VITcx3kH6Wy2yqI0X4i2J-TfMtOkWsF_jB1dg" target="_blank" id="btncp">Khám phá ngay</a><a href="#" id="next"><i class="fa-regular fa-circle-down fa-fade" style="color: #ffffff;"></i></a>
         </div>
       </div>
       <script>
@@ -109,6 +120,15 @@ function type() {
 }
 
 type();
+
+document.addEventListener('DOMContentLoaded', function () {
+    var menuToggle = document.getElementById('menu-toggle');
+    var menu = document.querySelector('.menu');
+
+    menuToggle.addEventListener('click', function () {
+      menu.classList.toggle('open');
+    });
+  });
       </script>
     </body>
     <footer class="footer">

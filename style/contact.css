@@ -1,3 +1,10 @@
+body{
+    min-height: 100vh;
+    background:#1f1f1f;
+    overflow-x: hidden;
+  }
+
+
 .contact {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Two columns of equal width */
